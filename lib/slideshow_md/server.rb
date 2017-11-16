@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-module Slideshow
+module SlideshowMD
   class Server < Sinatra::Base
     get '/' do
       # slideshow_file is the markdown file we'll be presenting

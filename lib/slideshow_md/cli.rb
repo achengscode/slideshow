@@ -1,4 +1,4 @@
-module Slideshow
+module SlideshowMD
   class CLI
     def start(slideshow)
       unless slideshow
@@ -8,8 +8,8 @@ module Slideshow
 
       slideshow_file = File.read(slideshow)
 
-      Slideshow::Server.set(:slideshow_file, slideshow_file)
-      Slideshow::Server.run!
+      SlideshowMD::Server.set(:slideshow_file, slideshow_file)
+      SlideshowMD::Server.run!
     end
 
     private
