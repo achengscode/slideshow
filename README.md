@@ -35,9 +35,7 @@ After starting the application, go to `localhost:4567` and your slideshow will b
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Fork the repo and create a branch that contains your changes. Make a PR against the master branch here and it'll be merged in if accepted!
 
 ## Contributing
 
