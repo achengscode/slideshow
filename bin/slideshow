@@ -1,0 +1,7 @@
+#! /usr/bin/env ruby
+require 'slideshow'
+
+slideshow_name = ARGV[0]
+
+cli = Slideshow::CLI.new
+cli.start(slideshow_name)
