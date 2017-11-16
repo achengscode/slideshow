@@ -6,11 +6,11 @@ A Ruby-wrapper for the `remarkjs` library - presents a local markdown file as a 
 
 Install it yourself as:
 
-    $ gem install slideshowmd
+    $ gem install slideshow-md
 
 ## Usage
 
-To use, simply just run `slideshowmd [slideshow name]`. This gem expects a slideshow file in the current directory formatted via `markdown` file format. 
+To use, simply just run `slideshow-md [slideshow name]`. This gem expects a slideshow file in the current directory formatted via `markdown` file format. 
 Currently we only support a single Markdown file containing the entire slideshow.
 
 An example slideshow is below:
@@ -30,6 +30,8 @@ An example slideshow is below:
 
 # Introduction
 ```
+
+After starting the application, go to `localhost:4567` and your slideshow will be present in your browser!
 
 ## Development
 
