@@ -10,7 +10,7 @@ Install it yourself as:
 
 ## Usage
 
-To use, simply just run `slideshow-md [slideshow name]`. This gem expects a slideshow file in the current directory formatted via `markdown` file format. 
+To use, simply just run `slideshow-md start [slideshow name]`. This gem expects a slideshow file in the current directory formatted via `markdown` file format. 
 Currently we only support a single Markdown file containing the entire slideshow.
 
 An example slideshow is below:

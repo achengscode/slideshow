@@ -1,7 +1,0 @@
-#! /usr/bin/env ruby
-require 'slideshow_md'
-
-slideshow_name = ARGV[0]
-
-cli = SlideshowMD::CLI.new
-cli.start(slideshow_name)

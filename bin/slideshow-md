@@ -1,0 +1,4 @@
+#! /usr/bin/env ruby
+require 'slideshow_md'
+
+SlideshowMD::CLI.start(ARGV)
