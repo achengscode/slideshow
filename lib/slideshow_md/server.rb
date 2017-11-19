@@ -5,7 +5,7 @@ module SlideshowMD
     get '/' do
       # slideshow_file is the markdown file we'll be presenting
       erb :index, 
-        locals: { slideshow_file: settings.slideshow_file, themes: settings.theme }
+        locals: { slideshow_file: settings.slideshow_file, theme: settings.theme }
     end
   end
 end

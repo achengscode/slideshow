@@ -6,7 +6,7 @@ module SlideshowMD
     method_option :theme, aliases: "-d", desc: "Optional theme for slideshow"
     def start(slideshow_path)
       slideshow_file = File.read(slideshow_path)
-      slideshow_theme = option[:theme] || "default"
+      slideshow_theme = options[:theme] || "default"
 
       SlideshowMD::Server.set(:slideshow_file, slideshow_file)
       SlideshowMD::Server.set(:theme, slideshow_theme)
