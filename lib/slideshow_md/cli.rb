@@ -1,23 +1,16 @@
-module SlideshowMD
-  class CLI
-    def start(slideshow)
-      unless slideshow
-        $stderr.puts usage_message
-        exit
-      end
+require 'thor'
 
-      slideshow_file = File.read(slideshow)
+module SlideshowMD
+  class CLI < Thor
+    desc "start SLIDESHOW_PATH", "starts the slideshow from the specified markdown file"
+    method_option :theme, aliases: "-d", desc: "Optional theme for slideshow"
+    def start(slideshow_path)
+      slideshow_file = File.read(slideshow_path)
+      slideshow_theme = option[:theme] || "default"
 
       SlideshowMD::Server.set(:slideshow_file, slideshow_file)
+      SlideshowMD::Server.set(:theme, slideshow_theme)
       SlideshowMD::Server.run!
-    end
-
-    private
-    def usage_message
-      <<~TEXT
-      Run using `slideshow [slideshow_name]`. Slideshow_name must match the
-      filename of the slideshow. Currently only supports a single markdown (.md) file.
-      TEXT
     end
   end	
 end
