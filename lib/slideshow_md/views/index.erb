@@ -4,10 +4,11 @@
     <link rel="stylesheet" href=<%= "assets/css/#{theme}.css" %>></link>
   </head>
   <body>
-    <textarea id="source">
-      <%= slideshow_file %>
+    <textarea id="source"><%= slideshow_file %>
     </textarea>
     <script src="assets/js/remark.min.js"></script>
-    <script>var slideshow = remark.create(); </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
   </body>
 </html>
